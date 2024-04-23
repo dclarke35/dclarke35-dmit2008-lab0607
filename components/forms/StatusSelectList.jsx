@@ -7,8 +7,8 @@ import {
   } from "@/components/ui/select"
 import { cn } from "@/lib/utils/mergeCss"
 
-function StatusSelectList({ children, className }) {
- return (<Select id="status" name="status">
+function StatusSelectList({ children, className, selectedDefault }) {
+ return (<Select id="status" name="status" defaultValue={selectedDefault}>
             <SelectTrigger>
             <SelectValue placeholder="Select..." />
             </SelectTrigger>

@@ -7,9 +7,9 @@ import {
   } from "@/components/ui/select"
 import { cn } from "@/lib/utils/mergeCss"
 
-function CategorySelectList({ children, className }) {
+function CategorySelectList({ children, className, selectedDefault }) {
 
- return (<Select id="category" name="category">
+ return (<Select id="category" name="category" defaultValue={selectedDefault}>
             <SelectTrigger>
             <SelectValue placeholder="Select..."/>
             </SelectTrigger>
